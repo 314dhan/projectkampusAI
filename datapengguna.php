@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <?php require "nav.php"?>
-            <div class="col-md-12">
+            <div class="col-md-9">
                 <div class="card mt-5">
                     <div class="card-header">
                         <h3 class="text-center">Data Pengguna</h3>
