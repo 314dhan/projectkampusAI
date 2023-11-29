@@ -1,32 +1,21 @@
 <?php
-// membuat kelas database
-class Database
-{
-    // mendefinisikan properti koneksi
-    private $host = "localhost"; // nama host
-    private $user = "root"; // nama user
-    private $pass = ""; // password
-    private $db = "certaintyfactor"; // nama database
-    private $conn; // koneksi
+class Database{
+    private $host = "localhost";
+    private $user = "root";
+    private $pass = "";
+    private $db = "certaintyfactor";
+    private $conn;
 
-    // membuat konstruktor
-    public function __construct()
-    {
-        // membuka koneksi ke database
+    public function __construct(){
         $this->conn = mysqli_connect($this->host, $this->user, $this->pass, $this->db);
-        // mengecek apakah koneksi berhasil
-        if (!$this->conn) { // jika gagal
+        if (!$this->conn) {
             echo "gagal";
-            die("Connection failed: " . mysqli_connect_error()); // menampilkan pesan error
+            die("Connection failed: " . mysqli_connect_error());
         }
     }
 
-    // membuat fungsi untuk menjalankan query
-    public function query($sql)
-    {
-        // menjalankan query
+    public function query($sql){
         $result = mysqli_query($this->conn, $sql);
-        // mengembalikan hasil query
         return $result;
     }
 }

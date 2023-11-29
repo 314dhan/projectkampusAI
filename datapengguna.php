@@ -1,4 +1,4 @@
-<?php require_once "layout/header.php";
+<?php $title = "Data Pengguna";require_once "layout/header.php";
 // memuat file kelas datauser
 require_once "models/Datauser.php";
 // mengambil semua datauser dari database
@@ -8,7 +8,7 @@ $datausers = Datauser::get_all();
 <body>
     <div class="container-fluid">
         <div class="row">
-            <?php require "nav.php" ?>
+            <?php require "layout/nav.php" ?>
             <div class="col-md-9">
                 <div class="card mt-5">
                     <div class="card-header">

@@ -1,4 +1,4 @@
-<?php require_once "layout/header.php"; ?>
+<?php $title = "Data Kerusakan";require_once "layout/header.php"; ?>
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center">

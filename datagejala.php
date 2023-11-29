@@ -1,4 +1,4 @@
-<?php require_once "layout/header.php" ?>
+<?php $title = "Data Gejala";require_once "layout/header.php" ?>
     <div class="container-fluid">
         <div class="row justify-content-center">
             <?php require "layout/nav.php"; ?>
@@ -52,7 +52,6 @@
                                     <tr><td>G14</td></tr>
                                     <tr><td>G15</td></tr>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>

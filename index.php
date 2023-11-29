@@ -1,4 +1,4 @@
-<?php require "layout/header.php";?>
+<?php $title = "Beranda";require "layout/header.php";?>
 <body>
     <div class="container-fluid">
         <div class="row">

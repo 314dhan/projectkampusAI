@@ -38,27 +38,23 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="card-body">
                         <form action="" method="POST">
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group">
                                     <label for="nama">Nama</label>
-                                    <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama" required>
+                                    <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama" autocomplete="off" required>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" autocomplete="off" required>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
+                            
+                                <div class="form-group">
                                     <label for="phone">No Hp</label>
-                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Nomor Handphone" required>
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Nomor Handphone" autocomplete="off" required>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group">
                                     <label for="alamat">Alamat</label>
-                                    <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Alamat" required>
+                                    <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Alamat" autocomplete="off" required>
                                 </div>
-                            </div>
-                            <div class="form-group">
                                 <label for="varian">Varian Motor</label>
                                 <select name="varian" id="motor" class="form-control">
                                     <option value="scoopy">Scoopy</option>
@@ -66,7 +62,7 @@ if (isset($_POST['submit'])) {
                                     <option value="pcx">PCX</option>
                                     <option value="vario">Vario</option>
                                 </select>
-                            </div>
+                            <br>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-primary btn-block">
                             </div>
@@ -77,4 +73,5 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
 </body>
+
 </html>
