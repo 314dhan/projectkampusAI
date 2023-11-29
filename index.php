@@ -1,8 +1,8 @@
-<?php require "header.php";?>
+<?php require "layout/header.php";?>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <?php require "nav.php"?>
+            <?php require "layout/nav.php"?>
             <div class="col-md-9">
                 <div class="card mt-5">
                     <div class="card-header">

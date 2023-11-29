@@ -16,6 +16,7 @@ class Database
         $this->conn = mysqli_connect($this->host, $this->user, $this->pass, $this->db);
         // mengecek apakah koneksi berhasil
         if (!$this->conn) { // jika gagal
+            echo "gagal";
             die("Connection failed: " . mysqli_connect_error()); // menampilkan pesan error
         }
     }
